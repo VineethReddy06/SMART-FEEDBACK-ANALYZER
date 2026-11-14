@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Smart Feedback AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="/" class="logo">
+            Smart Feedback AI
+        </a>
+
+        <nav>
+
+            <a href="/">
+                Home
+            </a>
+
+            <a href="/register">
+                Create Account
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= LOGIN ================= -->
+
+    <main class="auth-container">
+
+        <div class="auth-card">
+
+            <!-- Icon -->
+
+            <div class="auth-icon">
+                🤖
+            </div>
+
+
+            <h1>
+                Welcome Back 👋
+            </h1>
+
+            <p>
+                Sign in to continue to Smart Feedback AI.
+            </p>
+
+
+            <form id="loginForm"
+                  class="auth-form">
+
+
+                <!-- EMAIL -->
+
+                <div>
+
+                    <label for="loginEmail">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- PASSWORD -->
+
+                <div>
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                </div>
+
+                <a href="/forgot-password">
+                    Forgot password?
+                </a>
+
+
+                <!-- LOGIN BUTTON -->
+
+                <button
+                    type="submit"
+                    class="login-btn">
+
+                    Sign In →
+
+                </button>
+
+
+                <!-- MESSAGE -->
+
+                <p
+                    id="loginMessage"
+                    class="message">
+                </p>
+
+            </form>
+
+
+            <!-- REGISTER -->
+
+            <div class="auth-footer">
+
+                <span>
+                    Don't have an account?
+                </span>
+
+                <a href="/register">
+                    Create Account
+                </a>
+
+            </div>
+
+
+            <!-- BACK HOME -->
+
+            <a href="/"
+               class="back-home">
+
+                ← Back to Home
+
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <p>
+            © 2026 Smart Feedback AI
+        </p>
+
+        <p>
+            AI-powered feedback management system
+        </p>
+
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

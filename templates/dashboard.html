@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Smart Feedback AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="/" class="logo">
+            Smart Feedback AI
+        </a>
+
+        <nav>
+
+            <a href="/">
+                Home
+            </a>
+
+            <a href="/feedback">
+                Give Feedback
+            </a>
+
+            <a href="/logout">
+                Logout
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <main class="dashboard-container">
+
+
+        <!-- HEADER -->
+
+        <section class="dashboard-header">
+
+            <div>
+
+                <div class="dashboard-welcome">
+                    👋 Welcome Back
+                </div>
+
+                <h1>
+                    My Feedback
+                </h1>
+
+                <p>
+                    Track your submitted feedback and
+                    view the AI analysis.
+                </p>
+
+            </div>
+
+
+            <a href="/feedback"
+               class="btn">
+
+                + Give Feedback
+
+            </a>
+
+        </section>
+
+
+        <!-- ================= QUICK INFO ================= -->
+
+        <section class="user-dashboard-info">
+
+            <div class="user-info-card">
+
+                <div class="user-info-icon">
+                    💬
+                </div>
+
+                <div>
+
+                    <span>
+                        Your Feedback
+                    </span>
+
+                    <strong>
+                        Track Submissions
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="user-info-card">
+
+                <div class="user-info-icon">
+                    🤖
+                </div>
+
+                <div>
+
+                    <span>
+                        AI Analysis
+                    </span>
+
+                    <strong>
+                        Smart Insights
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="user-info-card">
+
+                <div class="user-info-icon">
+                    📊
+                </div>
+
+                <div>
+
+                    <span>
+                        Feedback Status
+                    </span>
+
+                    <strong>
+                        Monitor Progress
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEEDBACK SECTION ================= -->
+
+        <section class="dashboard-card">
+
+            <div class="section-header">
+
+                <h2>
+                    Feedback History
+                </h2>
+
+                <p>
+                    Your recent feedback and AI-generated insights
+                </p>
+
+            </div>
+
+
+            <!-- Existing JS loads feedback here -->
+
+            <div id="userFeedback">
+
+                <div class="loading">
+
+                    <div class="spinner"></div>
+
+                    Loading your feedback...
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="dashboard-cta">
+
+            <div>
+
+                <h2>
+                    Have more feedback?
+                </h2>
+
+                <p>
+                    Share another experience and let our AI
+                    analyze it for you.
+                </p>
+
+            </div>
+
+            <a href="/feedback"
+               class="btn">
+
+                Submit Feedback →
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <p>
+            © 2026 Smart Feedback AI
+        </p>
+
+        <p>
+            AI-powered feedback management system
+        </p>
+
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
